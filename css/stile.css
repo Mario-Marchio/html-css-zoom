@@ -8,13 +8,47 @@ header{
     justify-content: flex-end;
     background-color: black;
     color: white;
+    height: 20px;
 }
 main{
     background-color: black;
+    height: calc(100vh - 120px);
+    overflow: auto;
+}
+footer{
+    height: 100px;
+    background-color: rgb(30, 28, 28);
 }
 .mini-box{
     background-color: gray;
-    border-radius: 2px;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 3px;
     margin-left: 10px;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.
+.row{
+    display: flex;
+    row-gap: 20px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+.column{
+    flex-basis:calc(100% / 7 - 70px);
+    min-height: 100px;
+}
+.card{
+    position: relative;
+    border: 1px solid #fff;
+}
+.mic{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.6);
+    padding: 4px;
 }
